@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* common */
+body{
+    font-size:1.8rem;
+}
+.center{
+    width:initial;
+}
+.pc_con{
+    display:block;
+}
+.m_con{
+    display:none;
+}
+
+/* main */
+.s_l_con2 span{
+    font-size:1.4rem;
+}
+.r_t_con6 input[type="text"]{
+    width:80%;
+}
+
+/* footer */
+.ft_inner{
+    padding:100px 20px;
+}

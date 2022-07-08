@@ -1,0 +1,482 @@
+@charset "utf-8";
+/* COMMON */
+body{
+    font-size:2rem;
+}
+h4{
+    font-size:2.2rem;
+    font-weight:500;
+    margin-bottom:2.5%;
+}
+.pc_con{
+    display:block;
+}
+.m_con{
+    display:none;
+}
+.u_deco{
+    text-decoration:underline;
+    color:#222;
+}
+sub{
+    color:#666;
+}
+input[type="radio"]{
+    display:none;
+}
+input[type="radio"]+label{
+    cursor:pointer;
+    margin-right:5%;
+}
+input[type="radio"]+label:before{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    border:1px solid #ff9f50;
+    border-radius:50%;
+    margin-right:9px;
+    vertical-align: middle;
+}
+input[type="radio"]:checked+label:before{
+    color:#fff;
+    background:url(../image/sub/cheak.png) no-repeat center center;
+    background-size:90%;
+}
+.red_text{
+    color:#d10000;
+}
+.m_con{
+    display:none;
+}
+
+/* header */
+#hd_wrap{
+    box-shadow:0px 5px 10px rgba(204,204,204,0.3);
+}
+.hd_bg{
+    border-bottom:1px solid rgba(204, 204, 204, 0);
+}
+.depth1>li>a{
+    color:#222;
+}
+#hd_wrap.active .depth1>li:nth-of-type(2)>a,#hd_wrap.active .depth1>li:nth-of-type(2)>a{
+    color:#222;
+}
+#hd_wrap.active .depth1>li:nth-of-type(2):hover>a,#hd_wrap.active .depth1>li:nth-of-type(2):focus>a{
+    color:#ff9f50;
+}
+
+/* main */
+
+/* //main top */
+#reserve{
+    padding-top:140px;
+}
+.top{
+    text-align:center;
+    background:url(../image/sub/reserve_bg.png) no-repeat center center;
+    background-size:contain;
+}
+.top>h2{
+    font-size:4.6rem;
+}
+.top>span{
+    display:block;
+    font-size:2.2rem;
+    font-weight:400;
+}
+.app_btn{
+    color:#fff;
+    padding:13px 18px 13px 76px;
+    margin-top:30px;
+    border-radius:15px;
+    background:#ff9f50 url(../image/main/down_icon.png) no-repeat;
+    background-position:13px center; 
+}
+
+/* //tab wrap */
+.tabs{
+    width:50%;
+    text-align:center;
+    font-size:2.2rem;
+    margin:0px auto;
+}
+.tabs>a{
+    display:inline-block;
+    width:25%;
+    color:#ccc;
+    margin:8% 30px 20px 0px;
+}
+.tabs>a:nth-of-type(3){
+    margin:8% 0px 20px 0px;
+}
+.tabs>a.active{
+    color:#f4a131;
+}
+
+/* //tab container wrap */
+.tab_container_wrap{
+    padding:50px 0px 60px;
+    background:#f2f2f2;
+}
+.sub_left_content{
+    margin-top:0px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:30px;
+    background:#fff;
+    box-shadow:5px 5px 10px rgba(204,204,204,0.5);
+}
+
+/* //sub left content */
+.sub_left_content{
+    float:left;
+    width:39%;
+}
+.sub_left_content>h3{
+    color:#ff5050;
+    font-size:2.4rem;
+    padding-bottom:10%;
+}
+.sub_left_content>div{
+    margin-bottom:5%;
+}
+.time_pick{
+    font-size:0px;
+}
+.time_pick input[type="radio"]+label{
+    cursor:pointer;
+    margin:0px;
+}
+input[name="radio1"]+label:before{
+    display:inline-block;
+    width:25%;
+    height:56%;
+    line-height: 60px;
+    font-size:1.8rem;
+    text-align: center;
+    margin:0px;
+    background:#f2f2f2;
+}
+.time_pick input[id="time1"]+label:before{
+    content:"30분";
+    border:1px solid #ccc;
+    border-radius:10px 0px 0px 10px;
+    vertical-align: middle;
+}
+.time_pick input[id="time2"]+label:before{
+    content:"60분 ";
+    border-radius:0px;
+    border:none;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.time_pick input[id="time3"]+label:before{
+    content:"하루";
+    border:1px solid #ccc;
+    border-radius:0px 10px 10px 0px;
+}
+.time_pick input[type="radio"]:checked+label:before{
+    color:#fff;
+    background:#ff9f50;
+}
+.time_pick>a{
+    display:inline-block;
+    width:140px;
+    font-size:2rem;
+    text-align:center;
+    color:#222;
+    padding:10px 0px;
+    border:1px solid #ccc;
+    background:#f2f2f2;
+}
+.time_pick>a>span{
+    display:block;
+    font-size:1.4rem;
+    line-height:1;
+}
+.time_pick>a.active{
+    color:#fff;
+    background:#ff9f50;
+}
+.time_pick>a:nth-of-type(1){
+    border-radius:10px 0px 0px 10px;
+}
+.time_pick>a:nth-of-type(3){
+    border-radius:0px 10px 10px 0px;
+}
+.s_l_con2>div{
+    margin-bottom:1%;
+}
+.s_l_con2 input{
+    display:none;
+}
+.s_l_con2 input[type="checkbox"]+label{
+    display: inline-block;
+    cursor: pointer;
+}
+.s_l_con2 input[type="checkbox"]+label:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ff9f50;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.s_l_con2 input[type="checkbox"]:checked+label:before{
+    color:#fff;
+    background:url(../image/sub/cheak.png) no-repeat center center;
+    background-size:90%;
+}
+.s_l_con2 span{
+    font-size:1.6rem;
+}
+input[type="text"]{
+    border:none;
+    border-radius:0px;
+    border-bottom:1px solid #ccc;
+    margin-bottom:1%;
+}
+#address1{
+    width:60%;
+}
+#address2, #address3{
+    width:70%;
+}
+.s_l_con3 span{
+    font-size:1.6rem;
+    margin-left:1%;
+    vertical-align:middle;
+}
+.s_l_con3 a{
+    display:inline-block;
+    font-size:1.6rem;
+    padding:3px 10px;
+    border-radius:3px;
+    margin-left:10px;
+    border:1px solid #aaa;
+    background:#eee;
+}
+.s_l_con4>div{
+    font-size:0px;
+}
+.s_l_con4 input[type="radio"]+label{
+    cursor:pointer;
+    margin:0px;
+}
+input[name="radio2"]+label:before{
+    display:inline-block;
+    width:30%;
+    height:45%;
+    line-height:50px;
+    font-size:1.8rem;
+    text-align: center;
+    margin:0px;
+    background:#f2f2f2;
+}
+.s_l_con4 input[id="visit1"]+label:before{
+    content:"일반방문";
+    border:none;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-radius:10px 0px 0px 10px;
+    vertical-align: middle;
+}
+.s_l_con4 input[id="visit2"]+label:before{
+    content:"정기방문";
+    border:1px solid #ccc;
+    border-radius:0px 10px 10px 0px;
+    vertical-align: middle;
+}
+.s_l_con4 input[type="radio"]:checked+label:before{
+    color:#fff;
+    background:#ff9f50;
+}
+.s_l_con5 table{
+    width:95%;
+    text-align:center;
+    margin:0px auto;
+}
+.t_date>td{
+    font-size:2.4rem;
+    padding-bottom:15px;
+}
+.t_week>th{
+    width:14%;
+    margin-bottom:10px;
+}
+.s_l_con5 tbody td{
+    cursor:pointer;
+}
+.s_l_con6>div{
+    margin-bottom:1%;
+}
+
+/* //sub right content */
+.sub_right_content{
+    float:right;
+    width:59%;
+}
+.sub_right_content>div{
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:30px;
+    padding:30px;
+    background:#fff;
+    box-shadow:5px 5px 10px rgba(204,204,204,0.5);
+}
+.right_top>div{
+    margin-bottom:3%;
+}
+.file_up{
+    float:left;
+    width:200px;
+    height:200px;
+    border:1px solid #ccc;
+    border-radius:15px;
+    background:url(../image/sub/file_up.svg) no-repeat center 35%;
+    background-size:35%;
+}
+.file_up>button{
+    width:100%;
+    height:100%;
+    line-height:240px;
+    color:#aaa;
+    font-size:1.6rem;
+    padding:5px 7px;
+}
+.pet_info{
+    float:left;
+    width:60%;
+    margin-left:4%;
+}
+.pet_info input[type="text"]{
+    margin-left:9px;
+}
+.pet_info span{
+    margin-right:9px;
+}
+.birth{
+    margin:1% 0%;
+}
+.birth select{
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+.right_top textarea{
+    width:100%;
+    height:80px;
+    color:#222;
+    font-size:1.6rem;
+}
+.r_t_con4>div>div{
+    display:inline-block;
+    width:10%;
+    color:#aaa;
+    font-size:0px;
+    padding:5px 0px;
+    margin-right:8px;
+    border-radius:10px;
+}
+.r_t_con4 input{
+    display:none;
+}
+.r_t_con4 input[type="checkbox"]+label{
+    cursor: pointer;
+}
+.r_t_con4 input[type="checkbox"]+label:before{
+    display: inline-block;
+    width: 105%;
+    height: 40%;
+    line-height: 40px;
+    text-align: center;
+    font-size:2rem;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    vertical-align: middle;
+}
+input[id="body1"]+label:before{
+    content: "얼굴";
+}
+input[id="body2"]+label:before{
+    content: "꼬리";
+}
+input[id="body3"]+label:before{
+    content: "가슴";
+}
+input[id="body4"]+label:before{
+    content: "등";
+}
+input[id="body5"]+label:before{
+    content: "배";
+}
+input[id="body6"]+label:before{
+    content: "앞발";
+}
+input[id="body7"]+label:before{
+    content: "뒷발";
+}
+input[id="body8"]+label:before{
+    content: "없음";
+}
+.r_t_con4 input[type="checkbox"]:checked+label:before{
+    color:#222;
+    border:1px solid #ff9f50;
+}
+.r_t_con5>h4{
+    margin-bottom:-2%;
+}
+.radio5{
+    margin-top:3%;
+}
+.r_t_con7 textarea{
+    height:130px;
+}
+.right_bottom{
+    font-size:1.6rem;
+}
+.right_bottom h4{
+    font-size:1.8rem;
+    margin-bottom:1.8%;
+}
+.right_bottom li{
+    background:url(../image/sub/list.png) no-repeat left 4px;
+    padding-left:15px;
+}
+.right_bottom_t{
+    margin-bottom:30px;
+}
+.right_bottom_t>ul>li>span{
+    display:block;
+    font-size:1.4rem;
+}
+
+.last_sign{
+    text-align:center;
+    font-size:3rem;
+    font-weight:500;
+    margin:3% 0% 0%;
+}
+.last_sign>a{
+    display:inline-block;
+    font-size:2.2rem;
+    font-weight:400;
+    color:#fff;
+    padding:10px 30px;
+    margin-top:20px;
+    border-radius:10px;
+    background-image: linear-gradient(to right, #ff9f50 0%, #fda761 51%, #ff8b2c 100%);
+    background-size:230%;
+    transition:0.5s;
+}
+.last_sign>a:hover, .last_sign>a:focus{
+    background-position:right center;
+}

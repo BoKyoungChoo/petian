@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>예약하기 | 페티안</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+    <link href="css/sub_pc.css" rel="stylesheet" media="all and (max-width:1559px) and (min-width:1220px)">
+    <link href="css/sub_tablet.css" rel="stylesheet" media="all and (max-width:1219px) and (min-width:768px)">
+    <link href="css/sub_mobile.css" rel="stylesheet" media="all and (max-width:767px)">
+    
+    <script src="js/jquery_1.12.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+<div id="skip_nav">
+    <a href="#reserve">본문 바로가기</a>
+    <a href="#gnb">주메뉴 바로가기</a>
+</div>
+<!-- //SKIP NAVI -->
+
+<header id="hd_wrap">
+    <div class="hd_bg">
+        <div class="hd_inner center">
+            <h1 class="logo">
+                <a href="index.html">페티안</a>
+            </h1>
+            <nav id="gnb" class="pc_con">
+                <h2 class="blind">main navigation</h2>
+                <ul class="depth1 clear_fix">
+                    <li class="depth2_show">
+                        <a href="#">페티안</a>
+                        <ul class="depth2">
+                            <li><a href="#">방문돌봄</a></li>
+                            <li><a href="#">위탁돌봄</a></li>
+                            <li><a href="#">산책돌봄</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth2_none"><a href="#" class="active">예약하기</a></li>
+                    <li class="depth2_none"><a href="#">실시간후기</a></li>
+                    <li class="depth2_none"><a href="#">펫시터지원</a></li>
+                    <li class="depth2_show">
+                        <a href="#">고객센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth2_none"><a href="#">블로그</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login pc_con">로그인</a>
+
+            <div class="m_con">
+                <button class="m_gnb_btn"><span>모바일 메뉴 열기</span></button>
+                <nav id="m_gnb">
+                    <h2 class="blind">mobile navigation</h2>
+                    <a href="#" class="">로그인을 해주세요</a>
+                    <ul class="m_depth1">
+                        <li class="m_depth2_show">
+                            <a href="#">페티안</a>
+                            <ul class="m_depth2">
+                                <li><a href="#">방문돌봄</a></li>
+                                <li><a href="#">예약돌봄</a></li>  
+                                <li><a href="#">산책돌봄</a></li>
+                            </ul>
+                        </li>
+                        <li class="m_depth2_none">
+                            <a href="sub.html" class="active">예약하기</a>
+                        </li>
+                        <li class="m_depth2_none">
+                            <a href="#">실시간후기</a>
+                        </li>
+                        <li class="m_depth2_none">
+                            <a href="#">펫시터지원</a>
+                        </li>
+                        <li class="m_depth2_show">
+                            <a href="#">고객센터</a>
+                            <ul class="m_depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                            </ul>
+                        </li>
+                        <li class="m_depth2_none">
+                            <a href="#">블로그</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- //HEADER -->
+
+<div id="reserve">
+    <div class="top center">
+        <h2>예약하기</h2>
+        <span>
+        어플을 이용하시면 더 편리한 예약과<br class="m_con">
+        쿠폰 사용이 가능합니다
+        </span>
+        <button class="app_btn">앱 설치하기</button>
+    </div>
+    <div class="tab_wrap">
+        <div class="tabs">
+            <a class="active" href="#sub_tab1">방문돌봄</a>
+            <a href="#sub_tab2">위탁돌봄</a>
+            <a href="#sub_tab3">산책돌봄</a>
+        </div>
+        <div class="tab_container_wrap">
+            <div class="tab_container center">
+                <div id="sub_tab1" class="clear_fix">
+                    <div class="sub_left_content">
+                        <h3>
+                        ※ 기본돌봄내용을 제외한 모든 항목을<br class="pc_con">
+                        입력해주셔야 예약이 가능합니다
+                        </h3>
+                        <div class="s_l_con1">
+                            <h4>시간을 선택해주세요</h4>
+                            <div class="time_pick">
+                                <input type="radio" id="time1" name="radio1" checked="checked">
+                                <label for="time1"></label>
+                                <input type="radio" id="time2" name="radio1" >
+                                <label for="time2"></label>
+                                <input type="radio" id="time3" name="radio1" >
+                                <label for="time3"></label>
+                            </div>
+                        </div>
+                        <div class="s_l_con2">
+                            <h4>기본돌봄내용 <sub>(선택)</sub></h4>
+                            <div>사료 및 간식 급여</div>
+                            <div>배변 및 환경정리</div>
+                            <div>
+                                <input id="room_play" type="checkbox">
+                                <label for="room_play">실내 놀이</label>
+                            </div>
+                            <div>
+                                <input id="olddog_care" type="checkbox">
+                                <label for="olddog_care">노견 및 치료견, <span class="m_con second_line">투약 등 맞춤 케어</span></label>
+                            </div>
+                            <div>
+                                <input id="add_care" type="checkbox">
+                                <label for="add_care">돌봄견 추가</label>
+                                <span class="second_line"> - 실내돌봄 소형견만 2마리면 추가 요금 없음</span>
+                            </div>
+                            <div>
+                                <input id="add_walk" type="checkbox">
+                                <label for="add_walk">산책 추가</label>
+                                <span> - 30분 당 10,000원</span>
+                            </div>
+                        </div>
+                        <div class="s_l_con3">
+                            <h4>어디로 방문할까요?</h4>
+                            <div>
+                                <div>
+                                    <input id="address1" type="text">
+                                    <a href="#">우편번호</a>
+                                </div>
+                                <div>
+                                    <input id="address2" type="text">
+                                    <span>기본주소</span>
+                                </div>
+                                <div>
+                                    <input id="address3" type="text">
+                                    <span>나머지주소</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s_l_con4">
+                            <h4>방문유형을 선택해주세요</h4>
+                            <div>
+                                <input type="radio" id="visit1" name="radio2" checked="checked">
+                                <label for="visit1"></label>
+                                <input type="radio" id="visit2" name="radio2">
+                                <label for="visit2"></label>
+                            </div>
+                        </div>
+                        <div class="s_l_con5">
+                            <h4>방문날짜를 선택해주세요</h4>
+                            <div>
+                                <table>
+                                    <caption class="blind">달력</caption>
+                                    <thead>
+                                        <tr class="t_date">
+                                            <td colspan="2">
+                                                <button>&lt;</button>
+                                            </td>
+                                            <td colspan="3">
+                                                <button>2020.10&nbsp;</button>
+                                            </td>
+                                            <td colspan="2">
+                                                <button>&gt;</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="t_week">
+                                            <th scope="col">일</th>
+                                            <th scope="col">월</th>
+                                            <th scope="col">화</th>
+                                            <th scope="col">수</th>
+                                            <th scope="col">목</th>
+                                            <th scope="col">금</th>
+                                            <th scope="col">토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td>31</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="s_l_con6">
+                            <h4>방문시간을 선택해주세요</h4>
+                            <div>
+                                <input type="radio" id="visit_time1" name="radio3">
+                                <label for="visit_time1">09시 ~ 12시</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="visit_time2" name="radio3">
+                                <label for="visit_time2">12시 ~ 15시</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="visit_time3" name="radio3">
+                                <label for="visit_time3">15시 ~ 18시</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="visit_time4" name="radio3">
+                                <label for="visit_time4">18시 ~ 21시</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="visit_time5" name="radio3" checked="checked">
+                                <label for="visit_time5">언제 와도 괜찮아요</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_right_content">
+                        <div class="right_top">
+                            <div class="right_top">
+                                <div class="r_t_con1">
+                                    <h4>돌봄을 신청할 반려동물에 대해 입력해주세요</h4>
+                                    <div class="clear_fix">
+                                        <div class="file_up">
+                                            <button>파일 업로드</button>
+                                        </div>
+                                        <div class="pet_info">
+                                            <div>
+                                                <label for="name">이름</label>
+                                                <input id="name" type="text">
+                                            </div>
+                                            <div>
+                                                <label for="kind">견종</label>
+                                                <input id="kind" type="text">
+                                            </div>
+                                            <div class="birth">
+                                                <span>생일</span>
+                                                <select id="year">
+                                                    <option value="2020">2020</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2017">2017</option>
+                                                </select>
+                                                <label for="year">년</label>
+                                                <select id="month">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                                <label for="month">월</label>
+                                            </div>
+                                            <label for="weight">무게</label>
+                                            <input id="weight" type="text">
+                                            <span>kg</span>
+                                            <div>                           
+                                                <span>성별</span>
+                                                <input type="radio" id="sex" name="radio4" checked="checked">
+                                                <label for="sex">남아</label>
+                                                <input type="radio" id="sex2" name="radio4">
+                                                <label for="sex2">여아</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r_t_con2">
+                                    <h4>다른 강아지를 만났을 때 반응을 적어주세요</h4>
+                                    <textarea rows="5" cols="20" placeholder="ex) 짖거나 달려들어요, 반가워하며 함께 놀아요, 별로 관심을 두지 않아요"></textarea>
+                                </div>
+                                <div class="r_t_con3">
+                                    <h4>낯선 사람을 만났을 때 반응을 적어주세요</h4>
+                                    <textarea rows="5" cols="20" placeholder="ex) 무서워하며 경계해요, 별로 관심을 두지 않아요"></textarea>
+                                </div>
+                                <div class="r_t_con4">
+                                    <h4>
+                                    만지면 물거나 예민하게<br class="m_con"> 반응하는 부위가 있나요? 
+                                    <sub>(중복선택 가능)</sub>
+                                    </h4>
+                                    <div>
+                                        <div>
+                                            <input id="body1" type="checkbox">
+                                            <label for="body1"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body2" type="checkbox">
+                                            <label for="body2"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body3" type="checkbox">
+                                            <label for="body3"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body4" type="checkbox">
+                                            <label for="body4"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body5" type="checkbox">
+                                            <label for="body5"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body6" type="checkbox">
+                                            <label for="body6"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body7" type="checkbox">
+                                            <label for="body7"></label>
+                                        </div>
+                                        <div>
+                                            <input id="body8" type="checkbox">
+                                            <label for="body8"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r_t_con5">
+                                    <h4>예방접종을 완료 하셨나요?</h4>
+                                    <sub>
+                                    (켄넬코프, 코로나백신, 종합7종, 심장사상충, 광견병 중 <span class="u_deco">하나라도 미 접종 시 아니오</span>를 택해주세요.)
+                                    </sub>
+                                    <div class="radio5">
+                                        <input type="radio" id="yes" name="radio5">
+                                        <label for="yes">예</label>
+                                        <input type="radio" id="no" name="radio5" checked="checked">
+                                        <label for="no">아니오</label>
+                                    </div>
+                                </div>
+                                <div class="r_t_con6">
+                                    <h4>반려동물이 다니는 동물 병원을 알려주세요</h4>
+                                    <div>
+                                        <div>
+                                            <label for="hos_name">병원이름</label>
+                                            <input id="hos_name" type="text">
+                                        </div>
+                                        <div>
+                                            <label for="hos_callnum">전화번호</label>
+                                            <input id="hos_callnum" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r_t_con7">
+                                    <h4>기타 요청사항을 적어주세요</h4>
+                                    <textarea rows="5" cols="20"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_bottom">
+                            <div class="right_bottom_t">
+                                <h4>돌봄 요청 전 확인해주세요!</h4>
+                                <ul>
+                                    <li>
+                                    돌봄 용품<sub>(사료, 간식, 장난감, 배변패드, 배변봉투, 물티슈, 하네스, <span class="u_deco">인식표는 필수</span>)</sub>은 한 곳에 준비해서 미리 매니저님에게 알려주세요.<span class="red_text">*인식표가 없을 경우 동물보호법 제12조 / 동물 보호법 시행규칙 제11조[시행 2020.3.21]에 따라 산책이 어렵습니다.</span>
+                                    </li>
+                                    <li>배식량과 급수정보를 미리 알려주세요.<sub>*기본 수돗물 급여</sub></li>
+                                    <li>용변은 변기, 쓰레기는 집안 휴지통에 처리합니다.</li>
+                                    <li>발세척은 요청사항이 없을 경우 물티슈로 합니다.</li>
+                                    <li>펫시터에게 성적 수치심 및 혐오감을 느끼게하는 언행을 했을 시, 펫시터가 손해배상을 청구할 수 있습니다.</li>
+                                    <li class="red_text">날씨로 인해 산책 불가 시 실내돌봄으로 대체되고 차액은 자동 환불됩니다.</li>
+                                </ul>
+                            </div>
+                            <div class="right_bottom_b">
+                                <h4>취소 수수료 정책</h4>
+                                <ul>
+                                    <li>방문 예정 날짜와 시간을 기준으로 24시간 전부터 예약을 취소하시면 수수료 10,000원이 발생합니다.</li>
+                                    <li>서비스 시작 이후<sub>(펫시터님이 출발한 경우)</sub>에는 환불이 불가합니다.</li>
+                                    <li>연휴에는 수수료가 할증되어 방문 예정날짜와 시간을 기준으로 48시간 전에 예약을 취소하시면 수수료 20,000원이 발생합니다</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sub_tab2"></div>
+                <div id="sub_tab3"></div>
+                <div class="last_sign">
+                    <p class="bottom_text">
+                    예약하기 버튼을 누르시면 펫시터가 배정되고 결제 후 예약 완료가 되면<br class="pc_con">자동으로 채팅방이 오픈되어 돌봄이 완료된 후 1일 뒤 채팅방이 클로즈 됩니다.
+                    </p>
+                    <a href="#">예약하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //SUB MAIN -->
+
+<footer id="ft">
+    <div id="service">
+    <div class="service_content">
+        <h2>페티안에 더 궁금하신 사항이 있다면,<br>고객센터로 문의 주세요!</h2>
+        <h3>평일 오전 10시 ~ 오후 7시</h3>
+        <span>3866-0232</span>
+    </div>
+</div>
+    <div class="center ft_inner">
+        <div class="clear_fix">
+            <h2 class="ft_logo"><img src="image/common/ft_logo.svg" alt="페티안로고"></h2>
+            <div class="ft_menu clear_fix">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보정책</a>
+                <a href="#">안전보상제도</a>
+                <a href="#">제휴문의</a>
+            </div>
+            <div class="sns_wrap claer_fix">
+                <a href="#"><i class="fab fa-facebook-square" style="color:#ccc; font-size:1000px;"></i></a>
+                <a href="#"><i class="fab fa-youtube" style="color:#ccc; font-size:1000px;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="color:#ccc; font-size:1000px;"></i></a>
+                <a href="#"><i class="fab fa-blogger" style="color:#ccc; font-size:1000px;"></i></a>
+            </div>
+        </div>
+        <div class="ft_info_wrap">
+            <div class="ft_info">
+                <span>(주)지에이</span>
+                <span>Tel : 3866 0232</span>
+                <span>대표 : 전창식</span>
+            </div>
+            <small class="copy">
+                본사이트는 포트폴리오 용도로 제작된 가상의 사이트입니다.<br class="m_con">모든 콘텐츠의저작권은 페티안에 있음을 밝힙니다.<br>
+                <span>Design &amp; Publishing by Choo Bo Kyoung.</span>
+            </small>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+
+<section id="chat_wrap">
+    <div class="chat">
+        <div class="msg">
+            <div class="msg_top">
+                <h2>
+                    <img src="image/common/chat_logo.svg" alt="페티안">페티안
+                </h2>
+                <button class="btn_msg_close">
+                    <img src="image/common/close.png" alt="창닫기">  
+                </button>
+            </div>
+            <div class="msg_body">
+                <div class="top_time">오늘</div>
+                <div class="bot"><img src="image/common/chat_bot.svg" alt="강아지얼굴"></div>
+                <p>
+                만나서 반가워요!<br>페티안입니다.<br>
+                궁금한 사항을 입력해주세요 :)
+                </p>
+                <div>
+                    <div class="msg_wrap">
+                        <textarea class="msg_area" cols="1" rows="1" placeholder="메시지를 입력해주세요"></textarea>
+                        <button class="send_btn">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <button class="chat_btn">
+            <img src="image/common/btn_chat.png" alt="제게 물어보세요!라고 말하는 비숑 이미지">
+        </button>
+        </div>
+</section>
+<!-- //CHAT -->
+</body>
+</html>
+
